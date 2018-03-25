@@ -1,0 +1,29 @@
+
+
+
+
+{% extends "beshoy website/signupbase.html" %}
+{%block title%}
+
+{% include "beshoy website/includes/extra/signup/title.html"%}
+{%endblock%} 
+{%block header%}
+{% include "beshoy website/includes/extra/signup/title.html"%}
+{%endblock%} 
+{%block body%}
+<h2 class="flow-text">{% include "beshoy website/includes/extra/signup/title.html"%}</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn waves-effect waves-light" type="submit" name="action">{% include "beshoy website/includes/extra/signup/title.html"%}
+    <i class="material-icons right">send</i>
+ 
+  </button>
+</form>
+
+
+{%endblock%}
+{%block meta%}
+
+{% include "beshoy website/includes/extra/signup/meta.html"%}
+ {%endblock%}

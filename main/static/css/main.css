@@ -1,0 +1,289 @@
+body {
+  background-color: #4F4F4F;
+  font-family: nexabold;
+}
+
+div.Sidebar {
+  animation-delay: 1.5s;
+  width: 325px;
+  max-height: 260px;
+  padding: 0px;
+  margin: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-direction: row;
+  width: 100%;
+}
+
+.dark {
+  color: #999999;
+}
+
+.post {
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 150px;
+  height: 100px;
+  width: 100px;
+}
+
+.flow-text {
+  margin: 1px;
+  word-wrap: break-word;
+}
+
+.readit {
+  margin: 0px;
+  padding: 0px;
+  word-wrap: break-word;
+}
+
+.card .card-action {
+  margin: 0px;
+  padding: 0px;
+  word-wrap: break-word;
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 150px;
+  height: 100px;
+  width: 100px;
+}
+
+.postimg {
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 75%;
+  max-height: 500px;
+  width: 100%;
+}
+
+p.limt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  width: 100%;
+}
+
+a {
+  padding: 2px;
+  color: #5C5C53;
+}
+
+a:hover {
+  color: #9B8C8C;
+}
+
+nav {
+  background-color: #757D82;
+  line-height: 32px;
+  height: auto;
+}
+
+div.show {
+  height: 500px;
+}
+
+nav:hover {
+  background-color: #8C959B;
+}
+
+nav ul li {
+  border: 2px solid #8C959B;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 2px;
+  display: inline-block;
+  background-color: #668699;
+}
+
+nav ul li.active {
+  border: 2px solid #8C959B;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 2px;
+  background-color: #668699;
+}
+
+nav ul li a {
+  padding: 2px;
+  color: #3F484E;
+}
+
+nav ul li :hover {
+  background-color: #686854;
+}
+
+footer {
+  padding-left: 25px;
+  padding-bottom: 1px;
+  font-family: nexalight;
+  background-color: #757D82;
+}
+
+footer:hover {
+  background-color: #8C959B;
+}
+
+.row .col {
+  padding: 20px;
+  margin: 10px;
+  min-width: 400px;
+  background-color: #757D82;
+}
+
+div.col {
+  padding: 20px;
+  margin: 10px;
+  background-color: #9A9A75;
+  background-color: #757D82;
+  min-width: 400px;
+}
+
+div.col:hover {
+  padding: 20px;
+  margin: 10px;
+  background-color: #B48988;
+  background-color: #8C959B;
+  min-width: 400px;
+}
+
+img.small {
+  height: 53.5px;
+  width: 53.5px;
+}
+
+img.img-thumbnail {
+  background-color: #9c8b95;
+}
+
+.main {
+  animation-delay: 1s;
+}
+
+.fadeInRight {
+  animation-delay: .25s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.bounceInRight {
+  animation-delay: .5s;
+}
+
+div.modal {
+  overflow: hidden;
+  overflow-y: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 85px;
+  width: 400px;
+  max-height: 400px;
+  height: 401px;
+  background: rgba(0, 0, 0, 0)
+}
+
+.modal-open .modal {
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.modal-content {
+  padding: 0px;
+  background: rgba(0, 0, 0, 0)
+}
+
+.modal-dialog {
+  padding: 0px;
+  margin: 0px;
+  line-height: 20px;
+  background: rgba(0, 0, 0, 0)
+}
+
+#blog {
+  padding: 0px;
+  margin: 0px;
+}
+
+div.wrapper {
+  background-color: #cfcfff;
+}
+
+div.modal-body {
+  background-color: #B0D1E6;
+}
+
+div.modal-header {
+  background-color: #495C67;
+}
+
+@import "bourbon";
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+}
+
+#page {
+  width: auto;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.form-signin-heading,
+.checkbox {
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  font-weight: normal;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+}
+
+input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.loginbutton:hover {
+  background: #4D3737;
+}
+
+.loginbutton {
+  border: 2px solid #668699;
+  border-radius: 5px;
+  background: #4F6D80;
+  color: #5A5A49;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.signup {
+  padding: 2px;
+  color: #000000;
+}

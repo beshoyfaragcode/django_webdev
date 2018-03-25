@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        
+        (function()
+         {
+           if( window.localStorage )
+           {
+             if( !localStorage.getItem('firstLoad') )
+             {
+               localStorage['firstLoad'] = true;
+               window.location.reload();
+             }  
+             else
+               localStorage.removeItem('firstLoad');
+           }
+         })();
+        
+           </script>
+  {% load staticfiles %}
+
+	<link rel="stylesheet" href="% static 'main/stylesheet.css'%}" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+
+ 
+
+   <!--Import materialize.css -->
+   <!-- Compiled and minified CSS  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+ 
+    <link rel="stylesheet" href="{% static 'css/kickstart.css'%}" />
+     <!-- Compiled and minified CSS -->
+ <!-- KICKSTART -->
+ <!--Import Google Icon Font-->
+
+   <!-- Compiled and minified JavaScript -->
+ <!--Let browser know website is optimized for mobile-->
+ <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+ 
+  
+ 
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    
+  <link href="{% static 'css/main.css'%}" rel="stylesheet" type="text/css"/>
+  
+
+   <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+ {%block meta%}
+ 
+   
+  {%endblock%}
+<!--{#% include "beshoy website/includes/extra/page/meta.html"%#}-->
+ <title>{%block title%}
+
+  
+ {%endblock%} </title>
+
+</head>
+<body>
+  
+   <br>
+
+  
+ 
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light animated fadeInRight "id="nav"  >
+
+       
+   <a class="navbar-brand" href="#"><img class="small img-thumbnail " src="{% static 'img/1.jpg'%}" alt="Responsive image"  /><br>{%block header%}
+    
+    
+   {%endblock%} </a>
+
+  {%block heder%}
+  {%endblock%} 
+
+  
+</header>
+
+
+{%block modal%}
+{%endblock%} 
+
+<div  class="main animated zoomIn "  >
+  
+<br>
+
+  <div class="container">
+    
+      <div class="row align-items-start">
+          
+        
+        <div class="col">
+          
+           {%block body%}
+       
+        
+       {%endblock%}
+     
+      </div>
+      <div class=" Sidebar animated bounceInRight ">
+        <div class="feedgrabbr_widget" id="fgid_264dbab9b4ccf5ff5c67aeef5"></div>
+        <script> 
+       
+
+        if (typeof (fg_widgets) == "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_264dbab9b4ccf5ff5c67aeef5");
+        
+        </script>
+        <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script> 
+      
+      </div>
+  </div>
+  <br>
+
+</body>
+
+  <script>$(function(){
+    $('input').blur();
+  });
+  
+  
+  </script>
+  <script> 
+   
+  
+    </script>
+
+{%block script%}
+
+
+{%endblock%}
+
+  </div>
+{% include "beshoy website/includes/footer.html"%}
+</html>
+

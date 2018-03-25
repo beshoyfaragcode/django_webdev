@@ -1,0 +1,35 @@
+{% extends "beshoy website/blogbase.html" %}
+{%block title%}
+
+{% include "beshoy website/includes/extra/blog/title.html"%}
+{%endblock%} 
+{%block header%}
+
+{% include "beshoy website/includes/extra/blog/title.html"%}
+{%endblock%} 
+{%block body%}
+<h1 class="flow-text">{% include "beshoy website/includes/extra/blog/title.html"%} list</h1>
+<center>
+    {% for post in object_list %}
+    <time datetime="{{ post.date|date:"Y-m-dTH:i" }}">
+    <h5 class="flow-text"> {{ post.date|date:"Y-m-d" }}  <a href="/blog/{{post.slug}}">  {{post.title}} </a></h5>
+</time>
+    {%endfor%}
+</center>
+{%endblock%}
+{%block script%}
+
+<script>
+    
+ 
+
+    
+
+        
+   
+       </script>
+{%endblock%}
+{%block meta%}
+
+{% include "beshoy website/includes/extra/blog/meta.html"%}
+ {%endblock%}

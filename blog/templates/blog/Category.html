@@ -1,0 +1,36 @@
+{% extends "beshoy website/blogbase.html" %}
+{%block title%}
+Category
+{%endblock%} 
+{%block header%}
+Category
+{%endblock%} 
+{%block body%}
+<h1class="flow-text" >Category list</h1>
+<center>
+    {% for Category in object_list %}
+   
+    <time datetime="{{ Category.date|date:"Y-m-dTH:i" }}">
+    <h5 class="flow-text"> Category # :{{ Category.id}}<a href="/blog/Category/{{Category.slug}}">  {{Category.name}} </a></h5>
+</time>
+
+    {%endfor%}  
+    
+</center>
+{%endblock%}
+{%block script%}
+
+<script>
+    
+ 
+
+    
+
+        
+   
+       </script>
+{%endblock%}
+{%block meta%}
+
+{% include "beshoy website/includes/extra/blog/meta.html"%}
+ {%endblock%}

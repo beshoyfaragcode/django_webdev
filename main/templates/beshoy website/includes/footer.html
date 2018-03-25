@@ -1,0 +1,35 @@
+{%block header %}
+
+<footer> <small>
+      <p class="footer">Posted by: beshoyfarag</p>
+      <p class="footer">Contact information: <a href="mailto:beshoyfarag2009@gmail.com">
+        beshoyfarag2009@gmail.com</a>.
+      <p class="footer"><small>&copy; Copyright 2017,beshoyfarag inc </small></p>
+      <a href="/beshoyfarag"><span class="label label-info">home</span></a> 
+      <a href="/about"><span class="label label-info">about</span></a> 
+      <a href="/home"><span class="label label-info">contat us</span></a> 
+      <a href="/blog/Category/"><span class="label label-info">blog</span></a>
+      | <i class="material-icons "></i> <a href="/admin">Admin</a> 
+      | <i class="material-icons "></i><strong>
+       Today's date is :<span id="time"></span></time></strong>
+       | <i class="material-icons ">comment</i> <a href="#">3 Comments</a>
+         | <i class="material-icons ">share</i> <a href="#">39 Shares</a>
+    
+    </p>
+       
+  
+    </footer>
+    <script>
+    var today = new Date();
+    
+ document.getElementById('time').innerHTML=today;
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/kickstart.js"></script> <!-- KICKSTART -->
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  
+   
+    {% endblock %}

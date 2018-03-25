@@ -1,0 +1,57 @@
+{% extends "beshoy website/blogbase.html" %}
+{%block title%}
+
+categoy {{category.name }}
+{%endblock%} 
+{%block header%}
+
+categoy {{category.name }}
+{%endblock%} 
+{%block body%}
+<h1>categoy {{category.name }} list</h1>
+<center>
+
+<!-- <time datetime="{{ post.date|date:"Y-m-dTH:i" }}">
+    <h5> {{ post.date|date:"Y-m-d" }}  <a href="/blog/{{post.slug}}">  {{post.title}} </a></h5>
+</time> -->
+
+   {% for post in post %}
+   
+   <div class="row">
+    <div class="col s12 m7">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img class="post" src="{{post.img_url}}">
+          <span class="card-title flow-text" > #{{post.id}}</span>
+        </div>
+        <div class="card-content">
+          <p class="flow-text limt"> {{post.title}} -  {{post.short_blog_snippet}}</p>
+        </div>
+        <div class="card-action">
+          <a class="readit" href="/blog/{{post.slug}}"> read it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+{%endfor%} 
+
+
+
+{%endblock%}
+{%block script%}
+
+<script>
+    
+ 
+
+    
+
+        
+   
+       </script>
+{%endblock%}
+{%block meta%}
+
+{% include "beshoy website/includes/extra/blog/meta.html"%}
+ {%endblock%}

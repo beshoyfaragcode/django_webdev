@@ -1,0 +1,45 @@
+{% extends "beshoy website/blogbase.html" %}
+{%block title%}
+
+{{post.title}}
+{%endblock%} 
+{%block header%}
+
+<h1 class="flow-text">{{post.title}}</h1>
+{%endblock%} 
+{%block body%}
+<h1 class="flow-text">{{post.title}}</h1>
+
+<h6 class="flow-text">posted on :  {{ post.date }} </h6>
+<br>
+<h6 class="flow-text">in : <a href="Category/{{post.category.slug}}">{{ post.category.name }}</a>  </h6>
+<br>
+<div class="postbody">
+    <p class="flow-text"> {{ post.body |safe }} </p>
+    <br>
+    <center>
+    <img class="postimg" src="{{post.img_url}}">
+</center>
+</div>
+
+
+  
+
+{%endblock%}
+{%block script%}
+
+<script>
+    
+ 
+
+    
+
+        
+   
+       </script>
+{%endblock%}
+
+{%block meta%}
+
+{% include "beshoy website/includes/extra/post/meta.html"%}
+ {%endblock%}

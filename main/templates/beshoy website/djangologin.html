@@ -1,0 +1,59 @@
+
+{% extends "beshoy website/signupbase.html" %}
+{%block title%}
+
+blog login
+{%endblock%} 
+{%block header%}
+
+blog login
+{%endblock%} 
+{%block body%}
+<center>
+<h1 class="flow-text">blog login</h1>
+<div class="modal-dialog">
+  <div class="modal-header ">
+   
+  </div>
+  <div class="modal-body">
+      <div class="wrapper">
+          <h2 class="flow-text">Please login</h2>
+          <form class="form-signin"  method="post">
+              {% csrf_token %}
+              {{ form.as_p }}
+          
+
+          
+              <button class="btn waves-effect waves-light dark" type="submit" name="action">login
+                <i class="material-icons right">send</i>
+             
+              </button>
+              <a  href="/signup/" class=" btn waves-effect waves-light dark signup"> signup
+                   
+                   <i class="material-icons right">subject</i>  </a>
+          </form>
+          
+        </div>
+
+  </div>
+ 
+</div>
+</div>
+</div>
+</center>
+{%endblock%}
+{%block script%}
+
+<script>
+    
+ 
+
+    
+
+        
+   
+       </script>
+{%endblock%}
+
+ 
+
