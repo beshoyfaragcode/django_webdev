@@ -37,5 +37,5 @@ urlpatterns = [
         url(r'^login/$',auth_views.login , {'template_name':'beshoy website/djangologin.html'}) ,
          url(r'^signup', views.signup, name='signup'),
      url(r'^blog.html$', blog_views.blog, name='blog'),
-    url(r'^contact/', include('contact_form.urls')),
+    url(r'^contact/', views.signup, name='signup'),
 ]
