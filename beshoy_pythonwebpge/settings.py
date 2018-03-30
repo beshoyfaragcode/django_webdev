@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'main',
     'blog',
     'humanstxt',
+    'chatroom',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.sitemaps',

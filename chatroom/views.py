@@ -4,5 +4,5 @@ from __future__ import unicode_literals
 from django.shortcuts import render, redirect
 
 
-def(request):
+def chatroom (request):
   return render (request,'chatroom/chatroom.html')
