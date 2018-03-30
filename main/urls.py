@@ -26,6 +26,7 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 
 
+
 urlpatterns = [
    
     url(r'^$',auth_views.login , {'template_name':'beshoy website/home.html'}) ,
@@ -37,5 +38,5 @@ urlpatterns = [
         url(r'^login/$',auth_views.login , {'template_name':'beshoy website/djangologin.html'}) ,
          url(r'^signup', views.signup, name='signup'),
      url(r'^blog.html$', blog_views.blog, name='blog'),
-    url(r'^contact/', views.signup, name='signup'),
+    url(r'^contct/', views.chatroom, name='signup'),
 ]
