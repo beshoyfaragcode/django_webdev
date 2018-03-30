@@ -39,4 +39,5 @@ urlpatterns = [
          url(r'^signup', views.signup, name='signup'),
      url(r'^blog.html$', blog_views.blog, name='blog'),
     url(r'^chatroom/', chatroom_views.chatroom, name='chatroom'),
+    url(r'^ajax/chat/$', chatroom_views.broadcast, name='broadcast'),
 ]
