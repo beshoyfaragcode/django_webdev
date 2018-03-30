@@ -24,7 +24,7 @@ from blog import views as blog_views
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-
+from chatroom import views as chatroom_views
 
 
 urlpatterns = [
@@ -38,5 +38,5 @@ urlpatterns = [
         url(r'^login/$',auth_views.login , {'template_name':'beshoy website/djangologin.html'}) ,
          url(r'^signup', views.signup, name='signup'),
      url(r'^blog.html$', blog_views.blog, name='blog'),
-    url(r'^contct/', views.chatroom, name='signup'),
+    url(r'^chatroom/', chatroom_views.chatroom, name='chatroom'),
 ]
