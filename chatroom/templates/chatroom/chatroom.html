@@ -1,4 +1,4 @@
-{% extends "beshoy website/base.html" %}
+{% extends "beshoy website/blogbase.html" %}
 {%block title%}
 
 chatroom
@@ -123,13 +123,8 @@ input#btn-input::placeholder{
     </div>
 </div>
 <script>
-     Pusher.logToConsole = true;
-
     //initiate puhser with your application key
-    var pusher = new Pusher('d5b0dd6e176ebb8783b9', {
-        cluster: 'us2',
-        encrypted: true
-      });
+    var pusher = new Pusher('d5b0dd6e176ebb8783b9');
     //subscribe to the channel you want to listen to
     var my_channel = pusher.subscribe('a_channel');
     //wait for an event to be triggered in that channel
@@ -149,8 +144,6 @@ input#btn-input::placeholder{
                         </li>`;
      //append the new message to the ul holding the chat messages
     $('#chat').append(new_message);
-    alert(data.message);
-
     });
     //wait until the DOM is fully ready
     $(document).ready(function(){
