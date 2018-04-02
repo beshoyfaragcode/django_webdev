@@ -25,7 +25,7 @@ class Post(models.Model):
   author =  models.CharField (max_length = 160)
   description = models.TextField(max_length = 160)
   keywords = models.TextField()
-  category = models.ForeignKey(Category)
+  category = models.ForeignKey(Category,on_delete=models.DO_NOTHING)
   slug =  models.SlugField(max_length = 160,unique=True)
   img_url = models.URLField()
   short_blog_snippet=  models.CharField(max_length = 15)
