@@ -36,7 +36,7 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(null=True, max_length=256, blank=True)),
                 ('order', models.PositiveIntegerField(default=0)),
                 ('extras', models.ManyToManyField(null=True, to='humanstxt.Extra')),
-                ('group', models.ForeignKey(blank=True, to='humanstxt.Group', null=True)),
+                ('group', models.ForeignKey(blank=True, to='humanstxt.Group', null=True,on_delete=models.DO_NOTHING)),
             ],
             options={
                 'ordering': ['order', 'last_name'],
