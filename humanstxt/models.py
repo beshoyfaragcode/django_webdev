@@ -17,7 +17,7 @@ class Person(models.Model):
     order = models.PositiveIntegerField(default=0)
 
     extras = models.ManyToManyField(Extra, blank=True)
-    group = models.ForeignKey(Group, null=True, blank=True)
+    group = models.ForeignKey(Group, null=True, blank=True,on_delete=models.DO_NOTHING)
 
     class Meta:
         abstract = True
