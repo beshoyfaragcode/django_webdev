@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='otherpeople',
             name='group',
-            field=models.ForeignKey(blank=True, to='humanstxt.Group', null=True),
+            field=models.ForeignKey(blank=True, to='humanstxt.Group', null=True,on_delete=models.DO_NOTHING),
         ),
     ]
