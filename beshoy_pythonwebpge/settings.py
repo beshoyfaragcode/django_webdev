@@ -148,3 +148,4 @@ CHANNEL_LAYERS = {
        "ROUTING": "multichat.routing.channel_routing", # We will create it in a moment
     },
 }
+ASGI_APPLICATION = 'beshoy_pythonwebpge.routing.application'
