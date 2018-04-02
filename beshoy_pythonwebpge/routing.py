@@ -1,5 +1,5 @@
 
-from channels import route
+from channels.routing import route
 
 # This function will display all messages received in the console
 def message_handler(message):
