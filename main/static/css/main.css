@@ -144,6 +144,13 @@ div.col {
   background-color: #757D82;
   min-width: 400px;
 }
+div.chat{
+min-width:250px;
+min-height: 300px;
+width: 100%;
+height: 300px;
+
+}
 
 div.col:hover {
   padding: 20px;
