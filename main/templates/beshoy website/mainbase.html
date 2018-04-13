@@ -79,9 +79,8 @@
       },5000);
     }</script>
   <div class="preloder" id="page-preloader" >
-     
+     <center><div class="circle"></div></center>
       <canvas id="c"></canvas>
-      <div class="circle"></div>
       <script>var c = document.getElementById("c");
           var ctx = c.getContext("2d");
           var cH;
@@ -330,12 +329,16 @@
       border: 3px solid transparent;
     /*   border: 3px solid greeen; */
       border-radius: 50%;
+      background-image: none;
+      background-color:  transparent;;
     }
     
     .circle{
+      background-image: none;
+      background-color:  transparent;;
       height: 110px;
       width: 110px;
-      margin: 200px auto;
+      margin:  auto;
       position: relative;
       border-top-color: gold;
       animation-name: spin;
@@ -347,9 +350,13 @@
     .circle:before, .circle:after{
       content: "";
       position: absolute;
+      background-image: none;
+      background-color: transparent;;
     }
     
     .circle:before{
+      background-image: none;
+      background-color:  transparent;;
       top: 10px;
       left:10px;
       bottom: 10px;
@@ -363,6 +370,8 @@
     }
     
     .circle:after{
+      background-image: none;
+      background-color:  transparent;;
       top: 23px;
       left:23px;
       bottom: 23px;
