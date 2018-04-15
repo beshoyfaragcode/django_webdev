@@ -4,7 +4,7 @@ body {
 }
 
 div.Sidebar {
-  animation-delay: 1.5s;
+  animation-delay: 6.5s;
   width: 325px;
   max-height: 260px;
   padding: 0px;
@@ -170,17 +170,17 @@ img.img-thumbnail {
 }
 
 .main {
-  animation-delay: 1s;
+  animation-delay: 6s;
 }
 
 .fadeInRight {
-  animation-delay: .25s;
-  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-duration: 6s;
   animation-iteration-count: 1;
 }
 
 .bounceInRight {
-  animation-delay: .5s;
+  animation-delay: 6s;
 }
 
 div.modal {
