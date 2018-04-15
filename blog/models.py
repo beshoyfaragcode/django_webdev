@@ -19,8 +19,8 @@ class Category(models.Model):
     return self.name
 
 class Post(models.Model):
-  title = models.CharField (max_length = 160)
-  body = models.TextField()
+  title = models.CharField (max_length = 160, null=False)
+  body = models.TextField( null=False)
   date = models.DateTimeField()
   author =  models.CharField (max_length = 160)
   description = models.TextField(max_length = 160)

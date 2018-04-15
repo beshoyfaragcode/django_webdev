@@ -42,8 +42,8 @@ urlpatterns = [
          url(r'^signup', views.signup, name='signup'),
      url(r'^blog.html$', blog_views.blog, name='blog'),
     url(r'^chatroom/', chatroom_views.chatroom, name='chatroom'),
-  url(r'^blog/rss/', RssSiteNewsFeed()),
-    url(r'^blog/atom/', AtomSiteNewsFeed()),
+    url(r'^blog/rss/', RssSiteNewsFeed(), name='rssfeeds'),
+    url(r'^blog/atom/', AtomSiteNewsFeed(), name='atomfeeds')
 
    
 ]
