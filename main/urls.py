@@ -26,7 +26,7 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from chatroom import views as chatroom_views
 from django.urls import path
-from blog.feeds import RssSiteNewsFeed, AtomSiteNewsFeed
+from main.feeds import RssSiteNewsFeed, AtomSiteNewsFeed
 
 
 
@@ -42,8 +42,8 @@ urlpatterns = [
          url(r'^signup', views.signup, name='signup'),
      url(r'^blog.html$', blog_views.blog, name='blog'),
     url(r'^chatroom/', chatroom_views.chatroom, name='chatroom'),
-    url(r'^blog/rss/', RssSiteNewsFeed(), name='rssfeeds'),
-    url(r'^blog/atom/', AtomSiteNewsFeed(), name='atomfeeds')
-
+   
+ path('blog/rss/', RssSiteNewsFeed()),
+    path('blog/atom/', AtomSiteNewsFeed()),
    
 ]

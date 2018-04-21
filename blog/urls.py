@@ -37,5 +37,6 @@ urlpatterns = [
            url(r'^Category/(?P<category_slug>[-\w]+)$', views.categorylist, name='categorylist'),
             url(r'^Category/$', ListView.as_view(queryset = Category.objects.all().order_by("-date")[:25],
          template_name = "blog/Category.html")),
+         
    
 ]
