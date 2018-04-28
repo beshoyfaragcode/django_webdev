@@ -31,6 +31,7 @@ class Post(models.Model):
   short_blog_snippet=  models.CharField(max_length = 15)
   absolute_url = models.CharField(max_length=400, blank=True, editable=False)
 
+
   def __str__(self):
     
     return self.title

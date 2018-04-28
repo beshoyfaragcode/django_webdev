@@ -3,12 +3,19 @@ from blog.models import Post
 from django.utils.feedgenerator import Atom1Feed
 
 class RssSiteNewsFeed(Feed):
-    title = "Police beat site news"
-    link = "/sitenews/"
-    description = "Updates on changes and additions to police beat central."
+    title = "blog rss "
+    link = "/blog/rss/"
+    description = "blog rss and atom feeds ."
 
     def items(self):
-        return Post.objects.all.order_by('date')[:5]
+        return Post.objects.all().order_by("date")[:10]
+
+    def item_title(self, item):
+        return item.title
+
+    def item_description(self, item):
+        return item.description
+
 
 class AtomSiteNewsFeed(RssSiteNewsFeed):
     feed_type = Atom1Feed

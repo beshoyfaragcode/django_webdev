@@ -26,7 +26,7 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from chatroom import views as chatroom_views
 from django.urls import path
-from main.feeds import RssSiteNewsFeed, AtomSiteNewsFeed
+from .feeds import RssSiteNewsFeed, AtomSiteNewsFeed
 
 
 
