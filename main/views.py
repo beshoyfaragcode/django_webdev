@@ -15,6 +15,9 @@ def life (request):
  return render(request,'beshoy website/mylif.html')
 def todo(request):
  return render(request,'beshoy website/todo.html')
+def mainlogin (request):
+   return render (request,'beshoy website/djangologin.html') 
+
 def signup(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)

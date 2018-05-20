@@ -32,18 +32,18 @@ from .feeds import RssSiteNewsFeed, AtomSiteNewsFeed
 
 urlpatterns = [
    
-    url(r'^$',auth_views.login , {'template_name':'beshoy website/home.html'}) ,
-    url(r'^about', auth_views.login , {'template_name':'beshoy website/about.html'}) ,
-       url(r'^beshoyfarag',auth_views.login , {'template_name':'beshoy website/home.html'}) ,
-        url(r'^myschool',auth_views.login , {'template_name':'beshoy website/myschool.html'}) ,
-        url(r'^mylif', auth_views.login , {'template_name':'beshoy website/mylif.html'}) ,
-        url(r'^home' ,auth_views.login , {'template_name':'beshoy website/todo.html'}) ,
-        url(r'^login/$',auth_views.login , {'template_name':'beshoy website/djangologin.html'}) ,
+    url(r'^$',views.index , name='home') ,
+    url(r'^about', views.about , name='about') ,
+       url(r'^beshoyfarag',views.main , name='main') ,
+        url(r'^myschool',views.school, name='school' ) ,
+        url(r'^mylif', views.life ,name='life') ,
+        url(r'^home' ,views.todo ,name='todo') ,
+        url(r'^login/$',auth_views.LoginView.as_view()) ,
          url(r'^signup', views.signup, name='signup'),
      url(r'^blog.html$', blog_views.blog, name='blog'),
     url(r'^chatroom/', chatroom_views.chatroom, name='chatroom'),
-   
- path('blog/rss/', RssSiteNewsFeed()),
-    path('blog/atom/', AtomSiteNewsFeed()),
+     url(r'^rss/$',  RssSiteNewsFeed(), name='rssfeeds'),
+    url(r'^atom/$',  AtomSiteNewsFeed(), name='atomfeeds'),    
+  
    
 ]

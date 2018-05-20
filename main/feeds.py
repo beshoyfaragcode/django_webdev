@@ -8,14 +8,16 @@ class RssSiteNewsFeed(Feed):
     description = "blog rss and atom feeds ."
 
     def items(self):
-        return Post.objects.all().order_by("date")[:10]
+        return Post.objects.all().order_by('date')
 
     def item_title(self, item):
         return item.title
 
     def item_description(self, item):
-        return item.description
+        return item.description 
 
+    def item_link(self, item):
+       return item.get_absolute_url()
 
 class AtomSiteNewsFeed(RssSiteNewsFeed):
     feed_type = Atom1Feed
