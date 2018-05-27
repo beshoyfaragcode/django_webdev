@@ -134,7 +134,7 @@ footer:hover {
 }
 
 .row .col {
-  padding: 20px;
+  padding: 40px;
   margin: 10px;
   min-width: 400px;
   background-color: #272727;
@@ -156,7 +156,7 @@ height: 300px;
 }
 
 div.col:hover {
-  padding: 20px;
+  padding: 40px;
   margin: 10px;
   background-color: #7b7b7b;
   min-width: 400px;
@@ -278,7 +278,7 @@ input[type="password"] {
 }
 
 .loginbutton:hover {
-  background: #4D3737;
+  background:  #c6e8fd;
 }
 
 .loginbutton {
@@ -299,4 +299,19 @@ input[type="password"] {
 .signup {
   padding: 2px;
   color: #000000;
+}
+
+.inersidebar{
+   background-color:  #668699;
+    color: #272727;
+    width: 200px;
+    height: 200px;
+    padding-left: 50px;
+    
+}
+.two{
+   background-color:  #c6e8fd;
+    color: #272727;
+   
+    
 }
