@@ -352,6 +352,8 @@
        animation-duration:1.1s;
       animation-iteration-count: infinite;
       animation-direction: normal;
+        
+      
     }
     
     .circle:before, .circle:after{
@@ -374,6 +376,8 @@
       animation-iteration-count: infinite;
       animation-direction: normal;
       animation-duration: 2.1s;
+        
+      
     }
     
     .circle:after{
@@ -389,7 +393,8 @@
       animation-duration:3.1s;
       animation-iteration-count: infinite;
       animation-direction: normal;
-    }
+        
+       
     
     @keyframes spin{
       from{
@@ -398,7 +403,17 @@
       to{
         transform: rotate(360deg);
       }
-    }</style>
+    }
+      
+       @ -webkit-keyframes spin{
+      from{
+         -webkit-transform: rotate(0deg);
+      }
+      to{
+        -webkit- transform: rotate(360deg);
+      }
+    }
+      </style>
   </div>
    <br>
 
@@ -420,8 +435,6 @@
 </header>
 
 
-{%block modal%}
-{%endblock%} 
 
 <div  class="main animated zoomIn "  >
   
