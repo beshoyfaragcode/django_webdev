@@ -9,8 +9,8 @@
 <meta name='designer' content='beshoyfarag'>
 <meta name='reply-to' content='beshoyfarag2009@gmail.com'>
 <meta name='owner' content='beshoyfarag'>
-<meta name='url' content='http://www.websiteaddress.com'>
-<meta name='identifier-URL' content='http://www.websiteaddress.com'>
+<meta name='url' content='{{ request.get_full_path }}'>
+<meta name='identifier-URL' content='{{ request.get_full_path }}'>
 <meta name='directory' content='submission'>
 <meta name='coverage' content='Worldwide'>
 <meta name='distribution' content='Global'>
@@ -21,8 +21,8 @@
 <meta name='MobileOptimized' content='320'>
 <meta name='ResourceLoaderDynamicStyles' content=''>
 <meta name='medium' content='blog'>
-<meta name='syndication-source' content='<!--mysiteurl-->'>
-<meta name='original-source' content='<!--mysiteurl-->'>
+<meta name='syndication-source' content='{{ request.get_full_path }}'>
+<meta name='original-source' content='{{ request.get_full_path }}'>
 <!-- google site vrfiy-->
 <meta name='verify-v1' content='dV1r/ZJJdDEI++fKJ6iDEl6o+TMNtSu0kv18ONeqM0I='>
 <!-- google site vrfiy-->
@@ -50,7 +50,7 @@
 <meta http-equiv='Page-Exit' content='RevealTrans(Duration=3.0,Transition=12)'>
 <meta name='mssmarttagspreventparsing' content='true'>
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-<meta name='msapplication-starturl' content='<!-- my site -->'>
+<meta name='msapplication-starturl' content='{{ request.get_full_path }}'>
 <meta name='msapplication-window' content='width=800;height=600'>
 <meta name='msapplication-navbutton-color' content='red'>
 <!--pages -->
@@ -74,38 +74,38 @@ polling-uri2=notifications/contoso2.xml; polling-uri3=notifications/contoso3.xml
 <meta name='csrf-param' content='authenticity_token'>
 <meta name='csrf-token' content='/bZVwvomkAnwAI1Qd37lFeewvpOIiackk9121fFwWwc='>
 <!--my feeds -->
-<link rel='alternate' type='application/rss+xml' title='RSS' href='http://feeds.feedburner.com/martini'>
-<link rel='alternate' type='application/atom+xml' title='Atom 0.3' href='https://example.com/feed.atom'>
+<link rel='alternate' type='application/rss+xml' title='RSS' href='/rss'>
+<link rel='alternate' type='application/atom+xml' title='Atom 0.3' href='/atom'>
 <!--my feeds -->
 <link rel='shortcut icon' type='image/ico' href='https://yt3.ggpht.com/-Ek4jchivWV8/AAAAAAAAAAI/AAAAAAAAAAA/VQ3M8GzLXgk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg'>
 <link rel='fluid-icon' type='image/png' href='https://yt3.ggpht.com/-Ek4jchivWV8/AAAAAAAAAAI/AAAAAAAAAAA/VQ3M8GzLXgk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg'>
 <link rel='me' type='text/html' href='http://google.com/profiles/thenextweb'>
 <link rel='shortlink' href='http://blog.unto.net/?p=353'>
 <link rel='archives' title='May 2003' href='http://blog.unto.net/2003/05/'>
-<link rel='index' title='DeWitt Clinton' href='http://blog.unto.net/'>
-<link rel='start' title='Pattern Recognition 1' href='http://blog.unto.net/photos/pattern_recognition_1_about/'>
-<link rel='bookmark'title='Styleguide' href='http://paulrobertlloyd.com/about/styleguide/'>
+<link rel='index' title='Beshoy Farag' href='{{ request.get_full_path }}'>
+<link rel='start' title='Pattern Recognition 1' href='{{ request.get_full_path }}'>
+<link rel='bookmark'title='Styleguide' href='{{ request.get_full_path }}'>
 
 
-<link rel='self' type='application/atom+xml' href='#'>
-<link rel='first' href='http://www.syfyportal.com/atomFeed.php'>
-<link rel='next' href='http://www.syfyportal.com/atomFeed.php?page=4'>
-<link rel='previous' href='http://www.syfyportal.com/atomFeed.php?page=2'>
-<link rel='last' href='http://www.syfyportal.com/atomFeed.php?page=147'>
+<link rel='self' type='application/atom+xml' href='/rss'>
+<link rel='first' href='/atom'>
+<link rel='next' href='/atom'>
+<link rel='previous' href='/atom'>
+<link rel='last' href='/atom'>
 
 <link rel='canonical' href='http://smallbiztrends.com/2010/06/9-things-to-do-before-entering-social-media.html'>
-<link rel='EditURI' type='application/rsd+xml' title='RSD' href='http://smallbiztrends.com/xmlrpc.php?rsd'>
-<link rel='pingback' href='http://smallbiztrends.com/xmlrpc.php'>
+<link rel='EditURI' type='application/rsd+xml' title='RSD' href='http://en.wikipedia.org/w/api.php?action=rsd'>
+<link rel='pingback' href='{{ request.get_full_path }}'>
 
-<link rel='wlwmanifest' href='http://www.example.com/wp-includes/wlwmanifest.xml' type='application/wlwmanifest+xml'>
+<link rel='wlwmanifest' href='http://washington.gmu.edu/wp-includes/wlwmanifest.xml' type='application/wlwmanifest+xml'>
 
 <link rel='help' title='FAQ' href='/faq'>
 <link rel='logo' type='image/svg' href='https://yt3.ggpht.com/-Ek4jchivWV8/AAAAAAAAAAI/AAAAAAAAAAA/VQ3M8GzLXgk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg'>
 <link rel='P3Pv1' href='/w3c/p3p.xml'>
-<link rel='publisher' href='https://plus.google.com/115081025762845243709/'>
+<link rel='publisher' href='https://plus.google.com/+beshoyfarag6157203454'>
 <link rel='image_src' href='https://yt3.ggpht.com/-Ek4jchivWV8/AAAAAAAAAAI/AAAAAAAAAAA/VQ3M8GzLXgk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg' type='image/jpeg'>
 
-<link rel='author' href='humans.txt' type='text/plain'>
-<link href='http://thenextweb.com/2009/01/08/how-to-snap-up-that-twitter-username-youve-always-wanted/' rel='original-source'>
+<link rel='author' href='/humans.txt' type='text/plain'>
+<link href='{{ request.get_full_path }}' rel='original-source'>
 <link rel='profile' title='Microformats' href='http://microformats.org/profile/specs/'>
 <link rel='profile' href='http://gmpg.org/xfn/11'>

@@ -338,7 +338,7 @@ input[type="password"] {
 }
 a.media{
     
- color: #ffefff;
+ 
     
 background:  #272727;
     
@@ -351,5 +351,70 @@ background: #272727;
 }
 .mediabutton{
     color: #ffefff;
+    
+}
+.ytmediabutton{
+   color: #ffefff;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 75%;
+    height: 6%S;
+}
+a.ytmediabutton{
+   background-color:  #ff0000;
+    
+}
+
+
+a.ytmediabutton:hover{
+   background-color:  #0000ff;
+    
+}
+
+a.tmediabutton{
+   background-color:  #0084b4;
+    
+}
+
+a.tmediabutton:hover{
+   background-color:  #4b4800;
+    
+}
+a.lmediabutton{
+   background-color:  #0077B5;
+    
+}
+
+a.lmediabutton:hover{
+   background-color:  #5b7700;
+    
+}
+a.gmediabutton{
+   background-color:  #d34836;
+    
+}
+
+a.gmediabutton:hover{
+   background-color:  #63843d;
+    
+}
+
+a.fmediabutton{
+   background-color:  #3B5998;
+    
+}
+
+a.fmediabutton:hover{
+   background-color:  #8995b3;
+    
+}
+a.imediabutton{
+   background: linear-gradient( 200deg, #d047d1, #ff0000,    #ffff00);
+
+    
+}
+
+a.imediabutton:hover{
+    background: linear-gradient( -200deg, #1d740d, #0000ff,    #00ffff);
     
 }
