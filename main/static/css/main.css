@@ -330,8 +330,26 @@ input[type="password"] {
    
     
 }
+
 .sideone:hover{
      background-color:#272727 ;
     color:  #c6e8fd;
+    
+}
+a.media{
+    
+ color: #ffefff;
+    
+background:  #272727;
+    
+}
+a.media:hover{
+   
+    
+background: #272727;
+    
+}
+.mediabutton{
+    color: #ffefff;
     
 }
